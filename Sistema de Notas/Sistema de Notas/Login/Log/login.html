@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Creativo - Plataforma de Gestión de Notas</title>
+    <link rel="stylesheet" href="/Sistema de Notas/Login/Log/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Bienvenido</h2>
+            <p>Inicia sesión en la plataforma</p>
+            <form id="loginForm">
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="userid">ID de Usuario</label>
+                <input type="text" id="userid" name="userid" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Contraseña</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" onclick="togglePassword()">👁️</button>
+                </div>
+
+                <button type="submit">Ingresar</button>
+                <p class="footer-text">¿Olvidaste tu contraseña? <a href="#">Recupérala aquí</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="/Sistema de Notas/Login/Log/login.js"></script>
+</body>
+</html>

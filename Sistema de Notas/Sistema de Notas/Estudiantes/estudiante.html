@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Estudiante - Plataforma de Gestión de Notas</title>
+    <link rel="stylesheet" href="/Sistema de Notas/Estudiantes/estudiante.css">
+</head>
+<body>
+    <div class="student-container">
+        <header>
+            <h1>Bienvenido, Estudiante</h1>
+            <p>Consulta tus materias y calificaciones</p>
+        </header>
+
+        <form id="materiaForm" action="/Sistema_de_Notas/estudiante/procesar_estudiante.php" method="POST">
+            <label for="materia">Selecciona la Materia:</label>
+            <select id="materia" name="materia" required>
+                <option value="" disabled selected>-- Selecciona una materia --</option>
+                <option value="matematica">Matemáticas</option>
+                <option value="ciencia">Ciencias</option>
+                <option value="historia">Historia</option>
+                <!-- Más opciones de materias si es necesario -->
+            </select>
+
+            <button type="submit">Ver Calificaciones</button>
+        </form>
+
+        <div id="calificaciones" class="calificaciones-container">
+            <h3>Tus Calificaciones</h3>
+            <ul id="calificaciones-list">
+                <!-- Las calificaciones se agregarán aquí dinámicamente -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="/Sistema de Notas/Estudiantes/estudiante.js"></script>
+</body>
+</html>

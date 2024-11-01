@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Profesor - Plataforma de Gestión de Notas</title>
+    <link rel="stylesheet" href="/Sistema de Notas/Profesor/profesor.css">
+</head>
+<body>
+    <div class="teacher-container">
+        <header>
+            <h1>Bienvenido, Profesor</h1>
+            <p>Gestiona tus asignaturas y califica a los estudiantes</p>
+        </header>
+        
+        <form id="calificacionesForm" action="/Sistema_de_Notas/profesor/procesar_profesor.php" method="POST">
+            <label for="materia">Selecciona la Materia:</label>
+            <select id="materia" name="materia" required>
+                <option value="" disabled selected>-- Selecciona una materia --</option>
+                <option value="matematica">Matemáticas</option>
+                <option value="ciencia">Ciencias</option>
+                <option value="historia">Historia</option>
+                <!-- Más opciones de materias si es necesario -->
+            </select>
+
+            <label for="estudiante">ID del Estudiante:</label>
+            <input type="text" id="estudiante" name="estudiante" required placeholder="Ej. 12345">
+
+            <label for="calificacion">Ingresa la Calificación:</label>
+            <input type="number" id="calificacion" name="calificacion" min="0" max="100" required placeholder="0 - 100">
+
+            <button type="submit">Guardar Calificación</button>
+        </form>
+
+        <div id="resultado" class="resultado-container">
+            <h3>Resultados de la Calificación</h3>
+            <p id="mensaje"></p>
+        </div>
+    </div>
+
+    <script src="/Sistema de Notas/Profesor/profesor.js"></script>
+</body>
+</html>

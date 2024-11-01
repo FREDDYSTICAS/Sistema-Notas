@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Superadministrador - Plataforma de Gestión de Notas</title>
+    <link rel="stylesheet" href="/Sistema de Notas/Superadministrador/Superadm.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header>
+            <h1>Panel del Superadministrador</h1>
+            <p>Administra usuarios y gestiona la plataforma de manera eficiente</p>
+        </header>
+
+        <form action="/Sistema_de_Notas/superadmin/procesar_superadmin.php" method="POST">
+            <label for="accion">Selecciona la Acción:</label>
+            <select id="accion" name="accion" required>
+                <option value="" disabled selected>-- Selecciona una acción --</option>
+                <option value="crear_usuario">Crear Usuario</option>
+                <option value="eliminar_usuario">Eliminar Usuario</option>
+                <option value="modificar_usuario">Modificar Usuario</option>
+            </select>
+
+            <label for="usuario_id">ID de Usuario:</label>
+            <input type="text" id="usuario_id" name="usuario_id" required placeholder="Ej. 12345">
+
+            <div id="extraFields" style="display: none;">
+                <label for="nombre_usuario">Nombre de Usuario:</label>
+                <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Ej. Juan Pérez">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ej. usuario@correo.com">
+
+                <label for="rol">Rol del Usuario:</label>
+                <select id="rol" name="rol">
+                    <option value="" disabled selected>-- Selecciona un rol --</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="profesor">Profesor</option>
+                    <option value="superadministrador">Superadministrador</option>
+                </select>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej. 123-456-7890">
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ej. Calle Ejemplo 123">
+            </div>
+
+            <button type="submit">Ejecutar Acción</button>
+        </form>
+
+        <div id="feedback" style="display:none;" class="feedback-message"></div>
+        
+    <script src="/Sistema de Notas/Superadministrador/Superadm.js"></script>
+    </div>
+</body>
+</html>

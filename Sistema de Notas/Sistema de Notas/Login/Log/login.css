@@ -1,0 +1,102 @@
+/* Configuración general del body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #94d7fc;
+}
+
+/* Contenedor del formulario */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #eff9ff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #00796b;
+}
+
+.login-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los labels y los campos de entrada */
+.login-box label {
+    display: block;
+    text-align: left;
+    color: #00796b;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #b2dfdb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Efecto de enfoque en los campos */
+.login-box input:focus {
+    border-color: #00796b;
+    outline: none;
+    box-shadow: 0px 0px 4px #1f4c89;
+}
+
+/* Contenedor de la contraseña con botón de mostrar/ocultar */
+.password-container {
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    flex: 1;
+}
+
+.password-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #00796b;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+/* Botón de envío */
+.login-box button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: none;
+    color:none;
+}
+/* Efecto hover para el botón de envío */
+.login-box button[type="submit"]:hover {
+    background-color: #1f4c89;
+    color: white;
+}

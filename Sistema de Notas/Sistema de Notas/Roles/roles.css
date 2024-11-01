@@ -1,0 +1,93 @@
+/* Configuración general */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color:#94d7fc;
+}
+
+/* Contenedor principal */
+.role-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #eff9ff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado y mensaje de bienvenida */
+.welcome-box h2 {
+    font-size: 28px;
+    color: #00796b;
+}
+
+.welcome-box p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Botones de rol */
+.role-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.role-button {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.role-button:nth-child(1) {
+    background-color: #1f4c89;
+    color: #ffffff;
+}
+
+.role-button:nth-child(2) {
+    background-color: #1f4c89;
+    color: #ffffff;
+}
+
+.role-button:nth-child(3) {
+    background-color: #1f4c89;
+    color: #ffffff;
+}
+
+.role-button:hover {
+    transform: scale(1.05);
+}
+
+/* Mensaje de rol seleccionado */
+.role-message {
+    font-size: 16px;
+    color: #00796b;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Botón de continuar */
+.continue-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #00796b;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.continue-button:hover {
+    background-color: #004d40;
+}

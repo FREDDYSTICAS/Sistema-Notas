@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecciona tu Rol - Plataforma de Gestión de Notas</title>
+    <link rel="stylesheet" href="/Sistema de Notas/Roles/roles.css">
+</head>
+<body>
+    <div class="role-container">
+        <div class="welcome-box">
+            <h2>¡Bienvenido!</h2>
+            <p>Por favor, selecciona tu rol para continuar:</p>
+            
+            <div class="role-options">
+                <button class="role-button" onclick="selectRole('Estudiante')">Estudiante</button>
+                <button class="role-button" onclick="selectRole('Profesor')">Profesor</button>
+                <button class="role-button" onclick="selectRole('Superadministrador')">Superadministrador</button>
+            </div>
+            <p class="role-message" id="roleMessage"></p>
+            <a href="/Sistema de Notas/Login/Log/login.html" id="continueLink" style="display: none;" class="continue-button">Continuar</a>
+        </div>
+    </div>
+    <script src="/Sistema de Notas/Roles/roles.js"></script>
+</body>
+</html>
